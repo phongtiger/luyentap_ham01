@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ngoisao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let chomsao = ['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo'];
+    function detail(ten) {
+        let c;
+        for (let i=0; i< ngoisao.length;i++){
+            if (ngoisao[i] == ten ){
+                c = ngoisao[i] +" belong with " +chomsao[i];
+                return c;
+            }
+        }
+        return c = "Not found";
+    }
+    let nhapten = prompt("Nhap ten ngoi sao:  ");
+    document.write(detail(nhapten));
+
+</script>
+</body>
+</html>
